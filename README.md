@@ -13,6 +13,8 @@ This repository contains a VHDL-based Digital Clock and Stopwatch designed for t
 ## Deep Dive: The Finite State Machine (FSM) Architecture
 The system logic is strictly governed by a centralized FSM, which splits the application into two primary operating modes based on the position of switch `SW0`.
 
+![Diagrama Stari FSM](States_Diagram.png)
+
 ### Global Controls
 * **Initialization/Reset:** Pressing `btnC` triggers a global reset (`r`), returning the system to its baseline state regardless of the current mode.
 * **Mode Switch:** Toggling `sw 0` routes the FSM either to the Clock branch (off) or the Stopwatch branch (on).
